@@ -1,13 +1,7 @@
 module Weather
 
-def weather_condition
-  a = rand(10)
-  if a > 3
-    @weather = "sunny"
-  else
-    @weather = "stormy"
+  def weather_condition
+    @weather = rand(10) > 3 ?  "sunny" : "stormy"
   end
-end
-
 end
 
